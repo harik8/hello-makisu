@@ -5,6 +5,5 @@ jobs:
     - stage: build
       script:
       - git clone https://github.com/hari-karthig/hello-makisu.git 
-      - cd hello-makisu && git checkout MAKI-060619
       - docker build -t harikarthi/hello-makisu:travis .
 
