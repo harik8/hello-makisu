@@ -10,7 +10,7 @@ spec:
     imagePullPolicy: IfNotPresent
     name: jnlp
     resources: {}
-  - image: harikarthi/makisu-sh:2.0
+  - image: harikarthi/makisu-sh:3.0
     imagePullPolicy: IfNotPresent
     name: makisu
     tty: true

@@ -19,14 +19,14 @@ spec:
           mountPath: /makisu-context
       containers:
       - name: makisu
-        image: harikarthi/makisu-sh:2.0
+        image: harikarthi/makisu-sh:3.0
         imagePullPolicy: IfNotPresent
         args:
         - build
         - --push=index.docker.io
         - --modifyfs=true
         - --registry-config=/registry-config/registry.yml
-        - -t=harikarthi/hello-makisu:2.3
+        - -t=harikarthi/hello-makisu:3.0
         - /makisu-context
         volumeMounts:
         - name: context
