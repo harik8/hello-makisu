@@ -12,21 +12,21 @@ spec:
         image: alpine/git
         args:
         - clone
-        - https://github.com/hari-karthig/hello-makisu
+        - https://github.com/hariyaa/hello-makisu
         - /makisu-context
         volumeMounts:
         - name: context
           mountPath: /makisu-context
       containers:
       - name: makisu
-        image: harikarthi/makisu-sh:3.0
+        image: hariyaa/makisu-sh:1.0
         imagePullPolicy: IfNotPresent
         args:
         - build
         - --push=index.docker.io
         - --modifyfs=true
         - --registry-config=/registry-config/registry.yml
-        - -t=harikarthi/hello-makisu:3.0
+        - -t=hariyaa/hello-makisu:1.0
         - /makisu-context
         volumeMounts:
         - name: context
