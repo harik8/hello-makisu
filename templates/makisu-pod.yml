@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    app: jnlp-makisu
+    app: cicd
   name: makisu
 spec:
   containers:
@@ -10,8 +10,8 @@ spec:
     imagePullPolicy: IfNotPresent
     name: jnlp
     resources: {}
-  - image: harikarthi/makisu-sh:3.0
-    imagePullPolicy: IfNotPresent
+  - image: hariyaa/makisu-sh:1.0
+    imagePullPolicy: Always
     name: makisu
     tty: true
     resources: {}
