@@ -1,7 +1,7 @@
 registry="index.docker.io"
 credentials="/registry-config/registry.yaml"
-image="harikarthi/hello-makisu"
-tag="3.0"
+image="hariyaa/hello-makisu"
+tag="1.0"
 
 pipeline {
     agent {
